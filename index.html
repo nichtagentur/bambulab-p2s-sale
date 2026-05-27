@@ -3,591 +3,623 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BAMBU LAB P2S — 20% OFF · 3DJAKE</title>
-<meta name="description" content="Bambu Lab P2S high-speed 3D printer — 20% off at 3djake.com. 500 mm/s, AI error detection, AMS-compatible. Bundle with PLA Basic 4-pack and save €117.">
+<title>Bambu Lab P2S — 20% OFF Sale | 3DJAKE</title>
+<meta name="description" content="Bambu Lab P2S 3D printer 20% off at 3djake.com. The iconic all-rounder, redefined. Now €411,74 (RRP €514,68). Save €117 with the PLA Basic CMYK bundle.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0a0a0a;
-    --bg-2:#111111;
-    --ink:#f2efe7;
-    --dim:#8a8a85;
-    --line:#1f1f1f;
-    --line-2:#2a2a2a;
-    --lime:#c6ff3d;
-    --molten:#ff5c1f;
-    --warn:#ffb627;
-    --grid: rgba(255,255,255,.035);
+    --teal:#125467;
+    --teal-2:#00838a;
+    --teal-dk:#0d3f4f;
+    --orange:#e85d1f;
+    --orange-2:#f37021;
+    --yellow:#ffd03b;
+    --ink:#1a1a1a;
+    --mute:#666;
+    --line:#e4e6e7;
+    --bg:#ffffff;
+    --soft:#f2f4f5;
+    --soft-2:#f8f9fa;
+    --green:#3a9b3c;
+    --star:#ffb01b;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:var(--bg);color:var(--ink);font-family:'Sora',sans-serif;font-weight:400;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  body{
-    background-image:
-      linear-gradient(var(--grid) 1px, transparent 1px),
-      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-    background-size: 48px 48px, 48px 48px;
-  }
-  a{color:inherit;text-decoration:none}
+  html,body{background:var(--bg);color:var(--ink);font-family:'Poppins',Helvetica,Arial,sans-serif;font-weight:400;line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:var(--teal);text-decoration:none}
+  a:hover{text-decoration:underline}
   img{max-width:100%;display:block}
+  button{font-family:inherit;cursor:pointer;border:0}
 
-  .display{font-family:'Bebas Neue',sans-serif;letter-spacing:.01em;line-height:.9}
-  .mono{font-family:'JetBrains Mono',monospace;font-feature-settings:"tnum","ss01"}
-  .ital{font-family:'Instrument Serif',serif;font-style:italic;letter-spacing:-.01em}
+  /* ----- PROMO STRIP ----- */
+  .promo{background:var(--teal-dk);color:#fff;text-align:center;font-size:13.5px;font-weight:500;padding:8px 16px;letter-spacing:.01em}
+  .promo b{color:var(--yellow);font-weight:700}
 
-  /* ---------- TICKER ---------- */
-  .ticker{
-    position:sticky;top:0;z-index:50;
-    background:var(--molten);color:#0a0a0a;
-    border-bottom:1px solid #000;
-    overflow:hidden;
-    font-family:'JetBrains Mono',monospace;
-    font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.18em;
-  }
-  .ticker-track{display:flex;gap:48px;padding:10px 0;white-space:nowrap;animation:slide 38s linear infinite;width:max-content}
-  .ticker-track span{display:inline-flex;align-items:center;gap:14px}
-  .ticker-track .dot{width:6px;height:6px;background:#0a0a0a;border-radius:50%}
-  @keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  /* ----- INFO BAR ----- */
+  .infobar{background:var(--teal);color:#eee;font-size:13px;font-weight:500}
+  .infobar-in{max-width:1280px;margin:0 auto;display:flex;gap:24px;padding:8px 20px;align-items:center;flex-wrap:wrap}
+  .infobar-in span{display:flex;gap:8px;align-items:center}
+  .infobar-in .sep{opacity:.5}
 
-  /* ---------- TOP BAR ---------- */
-  .topbar{
-    position:sticky;top:34px;z-index:40;
-    background:rgba(10,10,10,.86);backdrop-filter:blur(10px);
-    border-bottom:1px solid var(--line);
-  }
-  .topbar-in{
-    max-width:1320px;margin:0 auto;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:14px 28px;gap:24px;
-  }
-  .brand{display:flex;align-items:baseline;gap:10px;font-family:'Bebas Neue';font-size:26px;letter-spacing:.06em}
-  .brand .slash{color:var(--lime)}
-  .brand small{font-family:'JetBrains Mono';font-size:10px;color:var(--dim);letter-spacing:.2em}
-  .countdown{display:flex;gap:8px;align-items:center;font-family:'JetBrains Mono';font-size:12px}
-  .countdown .label{color:var(--dim);text-transform:uppercase;letter-spacing:.18em;margin-right:6px}
-  .cd-unit{background:#000;border:1px solid var(--line-2);padding:6px 10px;min-width:48px;text-align:center}
-  .cd-unit b{font-weight:700;font-size:14px;color:var(--ink)}
-  .cd-unit i{font-style:normal;display:block;font-size:9px;color:var(--dim);letter-spacing:.14em}
+  /* ----- HEADER ----- */
+  header{background:#fff;border-bottom:1px solid var(--line)}
+  .header-in{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:28px;padding:14px 20px}
+  .logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+  .logo svg{height:42px;width:auto}
+  .logo-wm{font-weight:700;font-size:24px;letter-spacing:.02em}
+  .logo-wm .light{font-weight:300}
+  .search{flex:1;max-width:720px;position:relative}
+  .search input{width:100%;padding:14px 18px 14px 46px;border:1px solid var(--line);border-radius:999px;background:#fff;font-family:inherit;font-size:14px;outline:none}
+  .search input:focus{border-color:var(--teal)}
+  .search svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);color:var(--mute)}
+  .header-tools{display:flex;align-items:center;gap:20px;color:var(--ink);font-size:13px}
+  .header-tools a{color:var(--ink);display:flex;align-items:center;gap:6px}
+  .header-tools .basket{background:var(--soft);padding:8px 14px;border-radius:8px;font-weight:600}
 
-  /* ---------- HERO ---------- */
-  .hero{
-    position:relative;max-width:1320px;margin:0 auto;
-    padding:64px 28px 80px;
-    display:grid;grid-template-columns: 1.05fr .95fr;gap:48px;align-items:end;
-  }
-  .hero-tag{
-    font-family:'JetBrains Mono';font-size:11px;letter-spacing:.32em;color:var(--lime);
-    text-transform:uppercase;display:flex;gap:14px;align-items:center;margin-bottom:18px;
-  }
-  .hero-tag::before{content:"";display:inline-block;width:34px;height:1px;background:var(--lime)}
-  .hero h1{font-family:'Bebas Neue';font-size:clamp(60px,9.5vw,160px);line-height:.86;letter-spacing:.005em}
-  .hero h1 .small{display:block;font-size:.36em;color:var(--dim);letter-spacing:.04em}
-  .hero h1 em{font-family:'Instrument Serif';font-style:italic;font-weight:400;color:var(--lime);letter-spacing:-.02em}
+  /* ----- NAV ----- */
+  nav.main{background:var(--teal);color:#fff}
+  .nav-in{max-width:1280px;margin:0 auto;display:flex;gap:0;padding:0 20px;align-items:stretch;overflow-x:auto}
+  .nav-in a{color:#fff;padding:14px 18px;font-size:14px;font-weight:600;white-space:nowrap;border-bottom:3px solid transparent}
+  .nav-in a:hover,.nav-in a.active{border-bottom-color:#fff;text-decoration:none}
+  .nav-in a .icon{display:inline-block;vertical-align:middle;margin-right:4px}
 
-  .hero-meta{margin-top:36px;display:flex;gap:32px;flex-wrap:wrap}
-  .hero-meta div{border-left:1px solid var(--line-2);padding-left:14px}
-  .hero-meta b{display:block;font-family:'Bebas Neue';font-size:22px;letter-spacing:.04em}
-  .hero-meta span{font-family:'JetBrains Mono';font-size:10px;color:var(--dim);letter-spacing:.2em;text-transform:uppercase}
+  /* ----- BREADCRUMB ----- */
+  .crumb{max-width:1280px;margin:0 auto;padding:14px 20px;font-size:13px;color:var(--mute)}
+  .crumb a{color:var(--mute)}
+  .crumb .sep{margin:0 8px;color:#bbb}
+  .crumb .cur{color:var(--ink);font-weight:500}
 
-  .price-cluster{
-    background:#0e0e0e;border:1px solid var(--line-2);
-    padding:36px;position:relative;overflow:hidden;
-  }
-  .price-cluster::before{
-    content:"";position:absolute;inset:0;
-    background:repeating-linear-gradient(135deg, transparent 0 22px, rgba(198,255,61,.04) 22px 23px);
-    pointer-events:none;
-  }
-  .pc-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;font-family:'JetBrains Mono';font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
-  .pc-head .live{color:var(--molten);display:flex;align-items:center;gap:7px}
-  .pc-head .live::before{content:"";width:7px;height:7px;background:var(--molten);border-radius:50%;animation:pulse 1.6s infinite}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.2}}
+  /* ----- PRODUCT MAIN ----- */
+  .product{max-width:1280px;margin:0 auto;padding:8px 20px 48px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px}
+  @media(max-width:980px){.product{grid-template-columns:1fr;gap:24px;padding-bottom:24px}}
 
-  .price-old{font-family:'JetBrains Mono';color:var(--dim);text-decoration:line-through;text-decoration-color:var(--molten);font-size:18px}
-  .price-now{display:flex;align-items:baseline;gap:6px;margin-top:6px}
-  .price-now .currency{font-family:'Bebas Neue';font-size:38px;color:var(--dim)}
-  .price-now .amount{font-family:'Bebas Neue';font-size:120px;letter-spacing:.005em;line-height:.9}
-  .price-now .cents{font-family:'Bebas Neue';font-size:38px;color:var(--lime);align-self:flex-start;margin-top:14px;margin-left:2px}
-  .price-row{display:flex;justify-content:space-between;align-items:center;margin-top:22px;border-top:1px dashed var(--line-2);padding-top:18px}
-  .save-pill{background:var(--lime);color:#0a0a0a;padding:8px 14px;font-family:'JetBrains Mono';font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
-  .vat{font-family:'JetBrains Mono';font-size:10px;color:var(--dim);letter-spacing:.18em;text-transform:uppercase}
+  /* ----- GALLERY ----- */
+  .gallery{position:relative}
+  .gallery-main{background:#fff;border:1px solid var(--line);border-radius:6px;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+  .gallery-main img{max-width:90%;max-height:90%;object-fit:contain;transition:transform .35s ease}
+  .gallery-main:hover img{transform:scale(1.04)}
+  .gallery-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+  .gallery-thumbs button{background:#fff;border:1px solid var(--line);border-radius:4px;aspect-ratio:1/1;padding:6px;display:flex;align-items:center;justify-content:center;transition:border-color .15s}
+  .gallery-thumbs button img{max-width:100%;max-height:100%;object-fit:contain}
+  .gallery-thumbs button.active,.gallery-thumbs button:hover{border-color:var(--teal)}
+  .badges{position:absolute;top:14px;left:14px;display:flex;flex-direction:column;gap:6px;z-index:2}
+  .badge{font-size:11px;font-weight:700;padding:6px 12px;border-radius:4px;letter-spacing:.04em;text-transform:uppercase}
+  .badge.sale{background:var(--orange);color:#fff}
+  .badge.best{background:var(--orange-2);color:#fff}
+  .badge.stock{background:var(--green);color:#fff}
 
-  .cta{
-    display:inline-flex;align-items:center;gap:14px;
-    background:var(--lime);color:#0a0a0a;
-    padding:18px 28px;font-family:'Bebas Neue';font-size:22px;letter-spacing:.08em;
-    border:1px solid var(--lime);cursor:pointer;
-    transition:transform .15s ease, background .2s ease, color .2s ease;
-    width:100%;justify-content:center;margin-top:22px;
-  }
-  .cta:hover{background:transparent;color:var(--lime);transform:translateY(-2px)}
-  .cta .arrow{font-family:'JetBrains Mono';font-weight:700;font-size:18px}
-  .cta-ghost{background:transparent;color:var(--ink);border-color:var(--line-2)}
-  .cta-ghost:hover{color:var(--ink);background:#161616}
+  /* ----- DETAILS ----- */
+  .brand-line{font-size:14px;color:var(--mute);font-weight:500;margin-bottom:4px}
+  .product h1{font-size:36px;font-weight:700;line-height:1.1;letter-spacing:-.01em;margin-bottom:8px}
+  .tagline{font-size:18px;color:var(--ink);font-weight:400;margin-bottom:14px}
+  .ratings{display:flex;align-items:center;gap:10px;margin-bottom:18px;font-size:14px}
+  .stars{color:var(--star);letter-spacing:1px;font-size:18px}
+  .ratings a{font-size:13px}
+  .rating-meta{color:var(--mute);font-size:13px}
 
-  /* SVG blueprint floats */
-  .blueprint{position:absolute;right:-40px;top:30px;width:520px;opacity:.5;pointer-events:none}
-  @media(max-width:980px){.blueprint{display:none}}
+  .price-box{background:linear-gradient(180deg,#fff 0%,var(--soft-2) 100%);border:1px solid var(--line);border-radius:8px;padding:20px 22px;margin-bottom:20px;position:relative;overflow:hidden}
+  .price-box::after{content:"−20%";position:absolute;top:14px;right:18px;background:var(--orange);color:#fff;font-weight:800;font-size:24px;padding:8px 14px;border-radius:6px;letter-spacing:-.01em;box-shadow:0 4px 12px rgba(232,93,31,.3)}
+  .price-old{font-size:15px;color:var(--mute);text-decoration:line-through}
+  .price-now{display:flex;align-items:baseline;gap:8px;margin-top:2px}
+  .price-now .v{font-size:42px;font-weight:700;color:var(--orange);letter-spacing:-.01em}
+  .price-now .cur{font-size:20px;font-weight:600;color:var(--orange)}
+  .price-meta{font-size:12px;color:var(--mute);margin-top:6px;line-height:1.5}
+  .price-save{display:inline-block;margin-top:8px;background:#fff5e6;color:var(--orange);padding:4px 10px;border-radius:4px;font-size:13px;font-weight:600}
 
-  /* ---------- SECTION SHELL ---------- */
-  section{max-width:1320px;margin:0 auto;padding:48px 28px}
-  .rule{
-    height:1px;background:var(--line);position:relative;margin:0;
-  }
-  .rule::before,.rule::after{
-    content:"";position:absolute;top:-3px;width:1px;height:7px;background:var(--line-2);
-  }
-  .rule::before{left:0}
-  .rule::after{right:0}
-  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
-  .sec-head h2{font-family:'Bebas Neue';font-size:clamp(40px,5.5vw,82px);letter-spacing:.005em;line-height:.92}
-  .sec-head h2 em{font-family:'Instrument Serif';font-style:italic;color:var(--lime);letter-spacing:-.02em}
-  .sec-head .stamp{font-family:'JetBrains Mono';font-size:11px;color:var(--dim);letter-spacing:.24em;text-transform:uppercase;text-align:right}
-  .sec-head .stamp b{color:var(--ink)}
+  /* Variant tiles */
+  .variant{margin-bottom:20px}
+  .variant-label{font-size:13px;font-weight:600;margin-bottom:8px}
+  .variant-row{display:flex;gap:10px;flex-wrap:wrap}
+  .variant-tile{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px;border:2px solid var(--line);border-radius:6px;background:#fff;width:108px;font-size:12px;cursor:pointer;transition:all .15s}
+  .variant-tile img{width:72px;height:72px;object-fit:contain}
+  .variant-tile.active,.variant-tile:hover{border-color:var(--teal)}
+  .variant-tile .name{font-weight:600;color:var(--ink)}
+  .variant-tile .price{color:var(--mute);font-size:11px}
 
-  /* ---------- USP GRID ---------- */
-  .usp{
-    display:grid;grid-template-columns:repeat(4,1fr);gap:0;
-    border-top:1px solid var(--line);border-left:1px solid var(--line);
-  }
-  .usp .item{
-    border-right:1px solid var(--line);border-bottom:1px solid var(--line);
-    padding:26px 22px 28px;position:relative;min-height:180px;
-    transition:background .2s ease, color .2s ease;
-  }
-  .usp .item:hover{background:var(--lime);color:#0a0a0a}
-  .usp .item:hover .num,.usp .item:hover .label{color:#0a0a0a}
-  .usp .num{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.18em;color:var(--dim)}
-  .usp .ico{margin:14px 0 18px;width:36px;height:36px}
-  .usp h3{font-family:'Bebas Neue';font-size:30px;letter-spacing:.01em;line-height:1;margin-bottom:8px}
-  .usp p{font-size:13.5px;color:var(--ink);opacity:.78}
-  .usp .label{font-family:'JetBrains Mono';position:absolute;right:18px;bottom:14px;font-size:10px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
+  /* Bundle box */
+  .bundle{border:2px solid var(--teal-2);border-radius:8px;padding:16px;background:#f0fafb;margin-bottom:20px;position:relative}
+  .bundle::before{content:"BUNDLE & SAVE";position:absolute;top:-10px;left:14px;background:var(--teal-2);color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:.06em}
+  .bundle-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:14px;font-weight:600}
+  .bundle-row{display:flex;gap:10px;align-items:center;padding:6px 0}
+  .bundle-row img{width:46px;height:46px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:4px;padding:3px}
+  .bundle-row .name{flex:1;font-size:13.5px}
+  .bundle-row .name small{display:block;color:var(--mute);font-size:11px}
+  .bundle-thumbs{display:flex;gap:6px}
+  .bundle-thumbs img{width:30px;height:30px;background:#fff;border:1px solid var(--line);padding:2px;border-radius:3px}
+  .bundle-foot{display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding-top:12px;border-top:1px dashed var(--teal-2);font-size:14px}
+  .bundle-foot .total{font-weight:700;color:var(--teal-dk);font-size:18px}
+  .bundle-toggle{display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13.5px;font-weight:500;padding:4px 0}
+  .bundle-toggle input{width:18px;height:18px;accent-color:var(--teal-2)}
 
-  /* ---------- TELEMETRY STATS ---------- */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);background:#0c0c0c}
-  .stat{padding:32px 24px;border-right:1px solid var(--line);position:relative}
-  .stat:last-child{border-right:0}
-  .stat .tick{position:absolute;top:0;left:0;width:8px;height:8px;border-top:2px solid var(--lime);border-left:2px solid var(--lime)}
-  .stat .k{font-family:'JetBrains Mono';font-size:10px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
-  .stat .v{font-family:'Bebas Neue';font-size:72px;line-height:.96;margin-top:6px;letter-spacing:.005em}
-  .stat .v sup{font-size:.42em;color:var(--lime);font-family:'JetBrains Mono';font-weight:700;letter-spacing:0;vertical-align:.9em;margin-left:4px}
-  .stat .u{font-family:'JetBrains Mono';font-size:11px;color:var(--dim);letter-spacing:.16em;margin-top:6px;text-transform:uppercase}
+  /* CTA */
+  .cta-row{display:flex;gap:10px;margin-bottom:16px}
+  .btn{padding:16px 22px;border-radius:6px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:all .15s;text-decoration:none}
+  .btn-primary{background:var(--orange);color:#fff;flex:1}
+  .btn-primary:hover{background:#d04f15;text-decoration:none;color:#fff}
+  .btn-secondary{background:#fff;color:var(--ink);border:1px solid var(--line);padding:16px 18px}
+  .btn-secondary:hover{background:var(--soft);text-decoration:none;color:var(--ink)}
+  .btn-icon{width:50px;padding:0}
 
-  /* ---------- DEAL CARDS ---------- */
+  .deliv{display:grid;grid-template-columns:auto 1fr;gap:10px 14px;align-items:center;background:var(--soft-2);border-radius:6px;padding:14px 16px;font-size:13px}
+  .deliv .ico{width:20px;height:20px;color:var(--green)}
+  .deliv b{color:var(--green);font-weight:600}
+
+  /* ----- USP STRIP ----- */
+  .usp-strip{background:var(--soft);padding:24px 0;margin-top:0}
+  .usp-strip-in{max-width:1280px;margin:0 auto;padding:0 20px;display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:780px){.usp-strip-in{grid-template-columns:1fr 1fr}}
+  .usp-strip .item{display:flex;gap:12px;align-items:center;background:#fff;padding:14px 16px;border-radius:6px;border:1px solid var(--line)}
+  .usp-strip .item svg{flex-shrink:0;color:var(--teal-2)}
+  .usp-strip .item b{display:block;font-size:14px;font-weight:600}
+  .usp-strip .item span{font-size:12px;color:var(--mute)}
+
+  /* ----- SECTION ----- */
+  section.wide{max-width:1280px;margin:0 auto;padding:48px 20px}
+  .sec-h{font-size:28px;font-weight:700;margin-bottom:6px;color:var(--teal-dk)}
+  .sec-h .accent{color:var(--orange)}
+  .sec-sub{color:var(--mute);font-size:15px;margin-bottom:28px;max-width:60ch}
+
+  /* Feature grid */
+  .feat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:780px){.feat{grid-template-columns:1fr}}
+  .feat .card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;transition:all .2s}
+  .feat .card:hover{border-color:var(--teal-2);box-shadow:0 6px 24px rgba(0,131,138,.08);transform:translateY(-2px)}
+  .feat .card .ico{width:48px;height:48px;background:#f0fafb;border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--teal-2);margin-bottom:14px}
+  .feat .card h3{font-size:17px;font-weight:600;margin-bottom:6px}
+  .feat .card p{font-size:14px;color:var(--mute);line-height:1.55}
+
+  /* Spec table */
+  .spec-wrap{background:var(--soft-2);padding:32px;border-radius:8px;border:1px solid var(--line)}
+  .spec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 32px}
+  @media(max-width:780px){.spec-grid{grid-template-columns:1fr}}
+  .spec-grid div{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .spec-grid div b{font-weight:600}
+  .spec-grid div span{color:var(--mute);text-align:right}
+
+  /* Compare deals — final */
   .deals{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-  .deal{
-    background:#0c0c0c;border:1px solid var(--line-2);padding:34px;position:relative;display:flex;flex-direction:column;
-  }
-  .deal h3{font-family:'Bebas Neue';font-size:42px;letter-spacing:.02em;margin-bottom:10px;line-height:1}
-  .deal .tag{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.2em;color:var(--dim);text-transform:uppercase}
-  .deal ul{list-style:none;margin:24px 0 24px;flex:1}
-  .deal li{display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line-2);font-size:14px}
-  .deal li:last-child{border:0}
-  .deal li::before{content:"+";color:var(--lime);font-family:'JetBrains Mono';font-weight:700}
-  .deal .pricing{display:flex;align-items:baseline;gap:14px;margin-bottom:6px}
-  .deal .was{font-family:'JetBrains Mono';color:var(--dim);text-decoration:line-through;font-size:14px}
-  .deal .now{font-family:'Bebas Neue';font-size:64px;line-height:.9}
-  .deal .now sup{font-size:.4em;color:var(--lime);font-family:'JetBrains Mono';font-weight:700;letter-spacing:0;vertical-align:.7em;margin-left:2px}
-  .deal .saving{font-family:'JetBrains Mono';font-size:11px;letter-spacing:.18em;color:var(--molten);text-transform:uppercase}
-  .deal.best{border-color:var(--lime);background:linear-gradient(180deg,#10130a 0%,#0c0c0c 100%)}
-  .deal.best::before{
-    content:"BEST VALUE · BUNDLE";
-    position:absolute;top:-12px;left:30px;
-    background:var(--lime);color:#0a0a0a;
-    padding:6px 12px;
-    font-family:'JetBrains Mono';font-size:11px;font-weight:700;letter-spacing:.22em;
-  }
-  .deal.best::after{
-    content:"";position:absolute;inset:0;pointer-events:none;
-    background:repeating-linear-gradient(45deg, transparent 0 18px, rgba(198,255,61,.05) 18px 19px);
-  }
-  .deal .pricing,.deal h3,.deal ul,.deal .saving,.deal .tag{position:relative;z-index:1}
+  @media(max-width:780px){.deals{grid-template-columns:1fr}}
+  .deal{background:#fff;border:2px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+  .deal.featured{border-color:var(--orange);box-shadow:0 8px 32px rgba(232,93,31,.12)}
+  .deal-hd{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+  .deal-hd h3{font-size:20px;font-weight:700}
+  .deal.featured .deal-hd{background:linear-gradient(90deg,#fff7f0 0%,#fff 100%)}
+  .deal .featured-pill{background:var(--orange);color:#fff;font-size:11px;font-weight:700;padding:5px 10px;border-radius:4px;letter-spacing:.06em}
+  .deal-body{padding:24px;flex:1;display:flex;flex-direction:column;gap:16px}
+  .deal-imgs{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--soft-2);border-radius:8px;padding:18px;min-height:140px}
+  .deal-imgs img{height:120px;width:auto;object-fit:contain}
+  .deal-imgs.bundle-imgs img.main{height:120px}
+  .deal-imgs.bundle-imgs .spools{display:flex;gap:4px}
+  .deal-imgs.bundle-imgs .spools img{height:50px}
+  .deal-list{list-style:none;font-size:14px}
+  .deal-list li{padding:7px 0;border-bottom:1px solid var(--line);display:flex;gap:10px}
+  .deal-list li:last-child{border:0}
+  .deal-list li::before{content:"✓";color:var(--green);font-weight:700}
+  .deal-price{margin-top:auto;background:var(--soft-2);padding:18px;border-radius:8px;display:flex;justify-content:space-between;align-items:end}
+  .deal-price .now{font-size:30px;font-weight:700;color:var(--orange);line-height:1}
+  .deal-price .old{font-size:13px;color:var(--mute);text-decoration:line-through}
+  .deal-price .save{font-size:12px;background:#fff5e6;color:var(--orange);padding:3px 8px;border-radius:3px;font-weight:600;margin-top:4px;display:inline-block}
+  .deal-cta{padding:22px;border-top:1px solid var(--line)}
 
-  /* ---------- TRUST ---------- */
-  .trust{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .trust div{padding:28px;border-right:1px solid var(--line);display:flex;gap:18px;align-items:center}
-  .trust div:last-child{border-right:0}
-  .trust b{font-family:'Bebas Neue';font-size:22px;letter-spacing:.04em;display:block}
-  .trust span{font-family:'JetBrains Mono';font-size:11px;color:var(--dim);letter-spacing:.18em;text-transform:uppercase}
-  .trust svg{flex-shrink:0}
+  /* ----- TRUST FOOTER ----- */
+  .trust{background:var(--teal);color:#fff;padding:40px 20px;margin-top:24px}
+  .trust-in{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  @media(max-width:780px){.trust-in{grid-template-columns:1fr 1fr}}
+  .trust-in svg{margin:0 auto 8px;color:var(--yellow)}
+  .trust-in b{font-size:15px;display:block;margin-bottom:4px}
+  .trust-in span{font-size:13px;opacity:.85;line-height:1.45}
 
-  /* ---------- BIG FINAL CTA ---------- */
-  .final{
-    position:relative;margin-top:24px;
-    background:#000;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
-    overflow:hidden;
-  }
-  .final-in{max-width:1320px;margin:0 auto;padding:80px 28px;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end}
-  .final h2{font-family:'Bebas Neue';font-size:clamp(54px,8vw,128px);line-height:.86}
-  .final h2 .twenty{color:var(--lime)}
-  .final h2 em{font-family:'Instrument Serif';font-style:italic;color:var(--molten);font-weight:400}
-  .final p{margin-top:18px;color:var(--dim);max-width:48ch}
-  .final .stack{display:flex;flex-direction:column;gap:14px}
-  .marquee{
-    position:absolute;left:0;right:0;bottom:0;
-    overflow:hidden;border-top:1px solid var(--line);background:#080808;
-    font-family:'Bebas Neue';font-size:14px;letter-spacing:.22em;color:var(--dim);
-  }
-  .marquee div{display:flex;gap:42px;padding:10px 0;white-space:nowrap;animation:slide 50s linear infinite;width:max-content}
+  footer.legal{background:#555;color:#ccc;font-size:12px;padding:20px;text-align:center;line-height:1.7}
+  footer.legal a{color:var(--yellow)}
 
-  /* ---------- FOOTER ---------- */
-  footer{padding:36px 28px 60px;max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap}
-  footer .mono{font-size:11px;color:var(--dim);letter-spacing:.18em;text-transform:uppercase}
+  /* Countdown urgency badge */
+  .urgency{display:inline-flex;align-items:center;gap:8px;background:#fff5e6;color:var(--orange);padding:8px 14px;border-radius:6px;font-size:13px;font-weight:600;margin-bottom:14px}
+  .urgency .pulse{width:8px;height:8px;background:var(--orange);border-radius:50%;animation:pulse 1.4s infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
 
-  /* ---------- MOBILE ---------- */
-  @media(max-width:980px){
-    .hero{grid-template-columns:1fr;padding:36px 20px 56px}
-    .price-now .amount{font-size:96px}
-    .usp{grid-template-columns:repeat(2,1fr)}
-    .stats{grid-template-columns:repeat(2,1fr)}
-    .stat{border-bottom:1px solid var(--line)}
-    .deals{grid-template-columns:1fr}
-    .trust{grid-template-columns:1fr}
-    .trust div{border-right:0;border-bottom:1px solid var(--line)}
-    .final-in{grid-template-columns:1fr;padding:60px 20px}
-    .topbar-in{padding:12px 20px;gap:12px}
-    .countdown .label{display:none}
-    .topbar{top:34px}
-    section{padding:36px 20px}
-  }
-
-  /* fade-up reveal — pure CSS so content is always visible if JS doesn't run */
-  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-  .reveal{animation:rise .7s ease both}
+  .heart{cursor:pointer;color:var(--mute);font-size:20px;line-height:1;width:50px;height:52px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:6px;background:#fff;transition:color .15s}
+  .heart:hover{color:var(--orange)}
 </style>
 </head>
 <body>
 
-<!-- TICKER -->
-<div class="ticker">
-  <div class="ticker-track">
-    <span><span class="dot"></span>FLASH SALE · BAMBU LAB P2S · 20% OFF</span>
-    <span><span class="dot"></span>FREE EU SHIPPING ABOVE €99</span>
-    <span><span class="dot"></span>2-YEAR WARRANTY · 3DJAKE.COM</span>
-    <span><span class="dot"></span>BUNDLE INCLUDES 4KG PLA BASIC CMYK</span>
-    <span><span class="dot"></span>LIMITED STOCK · WHILE SUPPLIES LAST</span>
-    <!-- duplicate for seamless loop -->
-    <span><span class="dot"></span>FLASH SALE · BAMBU LAB P2S · 20% OFF</span>
-    <span><span class="dot"></span>FREE EU SHIPPING ABOVE €99</span>
-    <span><span class="dot"></span>2-YEAR WARRANTY · 3DJAKE.COM</span>
-    <span><span class="dot"></span>BUNDLE INCLUDES 4KG PLA BASIC CMYK</span>
-    <span><span class="dot"></span>LIMITED STOCK · WHILE SUPPLIES LAST</span>
+<!-- PROMO BAR -->
+<div class="promo">⚡ <b>FLASH SALE — 20% off Bambu Lab P2S</b> · ends in <span id="cd">23h 59m</span> · Bundle with PLA Basic CMYK to save <b>€117,61</b> ⚡</div>
+
+<!-- INFO BAR -->
+<div class="infobar">
+  <div class="infobar-in">
+    <span>🔧 Spare Parts Finder</span>
+    <span class="sep">•</span>
+    <span><b>Germany:</b> Free standard delivery from 52,90 €</span>
+    <span class="sep">•</span>
+    <span>More than 10.500 products</span>
+    <span style="margin-left:auto">Help ▾</span>
   </div>
 </div>
 
-<!-- TOP BAR -->
-<div class="topbar">
-  <div class="topbar-in">
-    <a href="https://www.3djake.com" class="brand"><span>3D</span><span class="slash">/</span><span>JAKE</span><small>· SALE/2026</small></a>
-    <div class="countdown" aria-label="Time left in sale">
-      <span class="label">Sale ends in</span>
-      <div class="cd-unit"><b id="cd-h">00</b><i>HRS</i></div>
-      <div class="cd-unit"><b id="cd-m">00</b><i>MIN</i></div>
-      <div class="cd-unit"><b id="cd-s">00</b><i>SEC</i></div>
+<!-- HEADER -->
+<header>
+  <div class="header-in">
+    <a href="https://www.3djake.com" class="logo">
+      <!-- recreated 3djake cube mark -->
+      <svg viewBox="0 0 60 60" aria-hidden="true">
+        <polygon points="30,4 56,18 56,42 30,56 4,42 4,18" fill="none" stroke="#125467" stroke-width="2"/>
+        <polygon points="30,4 56,18 30,30" fill="#9ed64a"/>
+        <polygon points="30,30 56,18 56,42" fill="#0e9aa7"/>
+        <polygon points="30,30 56,42 30,56" fill="#125467"/>
+        <polygon points="30,30 30,56 4,42" fill="#1bb6c2"/>
+        <polygon points="30,30 4,42 4,18" fill="#7bc242"/>
+        <polygon points="30,30 4,18 30,4" fill="#c5e063"/>
+      </svg>
+      <span class="logo-wm"><b>3D</b><span class="light">JAKE</span></span>
+    </a>
+    <div class="search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input placeholder="Search products"/>
+    </div>
+    <div class="header-tools">
+      <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg> Sign in</a>
+      <a href="#"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-9.5-9.5C.5 7 4 3 8 3.5c2 .3 3.4 1.6 4 3 .6-1.4 2-2.7 4-3 4-.5 7.5 3.5 5.5 8C19 16.5 12 21 12 21z"/></svg></a>
+      <a class="basket" href="#"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 7h12l-1.5 12h-9z"/><path d="M9 7V5a3 3 0 016 0v2"/></svg> Basket <small>0,00 €</small></a>
     </div>
   </div>
+</header>
+
+<!-- NAV -->
+<nav class="main">
+  <div class="nav-in">
+    <a href="#" class="active">Brands</a>
+    <a href="#">3D Printers &amp; More</a>
+    <a href="#">Spare Parts &amp; Upgrades</a>
+    <a href="#">Filaments</a>
+    <a href="#">Resin</a>
+    <a href="#">Accessories</a>
+    <a href="#" style="color:var(--yellow)">⚡ Offers</a>
+    <a href="#" style="color:var(--orange-2)">🔥 New Products</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="crumb">
+  <a href="#">🏠</a> <span class="sep">›</span>
+  <a href="#">Brands</a> <span class="sep">›</span>
+  <a href="https://www.3djake.com/bambu-lab">Bambu Lab</a> <span class="sep">›</span>
+  <span class="cur">Bambu Lab P2S</span>
 </div>
 
-<!-- HERO -->
-<section class="hero">
+<!-- PRODUCT -->
+<div class="product">
+
+  <!-- GALLERY -->
+  <div class="gallery">
+    <div class="gallery-main">
+      <div class="badges">
+        <span class="badge sale">−20% Sale</span>
+        <span class="badge best">Bestseller</span>
+        <span class="badge stock">In stock</span>
+      </div>
+      <img id="mainImg" src="https://3d.nice-cdn.com/upload/image/product/large/default/92605_224ffa65.512x512.png" alt="Bambu Lab P2S — main view">
+    </div>
+    <div class="gallery-thumbs">
+      <button class="active" onclick="setImg(this,'92605_224ffa65')"><img src="https://3d.nice-cdn.com/upload/image/product/large/default/92605_224ffa65.256x256.png" alt=""></button>
+      <button onclick="setImg(this,'92599_c9e7cadf')"><img src="https://3d.nice-cdn.com/upload/image/product/large/default/92599_c9e7cadf.256x256.png" alt=""></button>
+      <button onclick="setImg(this,'92602_98afa525')"><img src="https://3d.nice-cdn.com/upload/image/product/large/default/92602_98afa525.256x256.png" alt=""></button>
+      <button onclick="setImg(this,'92608_4e38ec31')"><img src="https://3d.nice-cdn.com/upload/image/product/large/default/92608_4e38ec31.256x256.png" alt=""></button>
+    </div>
+  </div>
+
+  <!-- DETAILS -->
   <div>
-    <div class="hero-tag reveal">SKU · 3DJ-BAMBU-P2S-001 / IN STOCK</div>
-    <h1 class="reveal">
-      <span class="small">High-Speed Core-XY</span>
-      BAMBU LAB<br>
-      P2S<br>
-      <em>twenty&nbsp;percent off.</em>
-    </h1>
-    <div class="hero-meta reveal">
-      <div><b>500 mm/s</b><span>MAX SPEED</span></div>
-      <div><b>256³ mm</b><span>BUILD VOLUME</span></div>
-      <div><b>300 °C</b><span>HOTEND</span></div>
-      <div><b>AI</b><span>ERROR DETECTION</span></div>
+    <div class="brand-line">Bambu Lab</div>
+    <h1>P2S</h1>
+    <div class="tagline">The iconic all-rounder, redefined.</div>
+
+    <div class="ratings">
+      <span class="stars">★★★★★</span>
+      <a href="#">9 Customer Ratings</a>
+      <span class="rating-meta">· SKU 3DJ-BAMBU-P2S</span>
+    </div>
+
+    <div class="urgency"><span class="pulse"></span> Sale ends in <b id="cd2">23h 59m 59s</b> — limited stock</div>
+
+    <div class="price-box">
+      <div class="price-old">514,68 €</div>
+      <div class="price-now"><span class="v">411,74</span><span class="cur">€</span></div>
+      <span class="price-save">You save 102,94 €</span>
+      <div class="price-meta">(Price shown includes 19% VAT. — <a href="#">Excludes delivery costs</a>)</div>
+    </div>
+
+    <div class="variant">
+      <div class="variant-label">Variant:</div>
+      <div class="variant-row">
+        <div class="variant-tile active">
+          <img src="https://3d.nice-cdn.com/upload/image/product/large/default/92605_224ffa65.256x256.png" alt="P2S">
+          <span class="name">P2S</span>
+          <span class="price">411,74 €</span>
+        </div>
+        <div class="variant-tile">
+          <img src="https://3d.nice-cdn.com/upload/image/product/large/default/92587_36282a6c.128x128.png" alt="P2S Combo">
+          <span class="name">P2S Combo</span>
+          <span class="price">594,21 €</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BUNDLE -->
+    <div class="bundle">
+      <div class="bundle-head">
+        <span>Frequently bought together</span>
+        <span style="color:var(--teal-2);font-weight:700">Save extra 14,67 €</span>
+      </div>
+      <label class="bundle-toggle">
+        <input type="checkbox" id="bundleCheck" checked>
+        <img src="https://3d.nice-cdn.com/upload/image/product/large/default/47878_59194eec.512x512.webp" style="width:46px;height:46px;object-fit:contain;border:1px solid var(--line);border-radius:4px;padding:3px;background:#fff" alt="">
+        <div style="flex:1">
+          <div style="font-weight:600">+ Bambu Lab PLA Basic — CMYK 4-Pack <small style="color:var(--mute);font-weight:400">(4 × 1 kg refill)</small></div>
+          <div style="font-size:12px;color:var(--mute)">Cyan-Green · Yellow · Red · Black — RFID-tagged, AMS-ready</div>
+        </div>
+      </label>
+      <div class="bundle-thumbs">
+        <img src="https://3d.nice-cdn.com/upload/image/product/large/default/47872_0c831e1d.512x512.webp" alt="Cyan-Green">
+        <img src="https://3d.nice-cdn.com/upload/image/product/large/default/47893_beb1f1df.512x512.webp" alt="Yellow">
+        <img src="https://3d.nice-cdn.com/upload/image/product/large/default/47887_1e1e06a4.512x512.webp" alt="Red">
+        <img src="https://3d.nice-cdn.com/upload/image/product/large/default/58224_8e826833.512x512.png" alt="Black">
+      </div>
+      <div class="bundle-foot">
+        <span>Bundle total <small style="color:var(--mute);text-decoration:line-through">588,05 €</small></span>
+        <span class="total">470,44 €</span>
+      </div>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://www.3djake.com/bambu-lab/p2s">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 7h12l-1.5 12h-9z"/><path d="M9 7V5a3 3 0 016 0v2"/></svg>
+        Add to basket
+      </a>
+      <button class="heart" aria-label="Wishlist">♡</button>
+      <button class="btn btn-secondary btn-icon" aria-label="Share">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.6 10.5L15.4 7.5M8.6 13.5L15.4 16.5"/></svg>
+      </button>
+    </div>
+
+    <div class="deliv">
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17h2l1 3h12l1-3h2V8H3z"/><circle cx="8" cy="20" r="2"/><circle cx="17" cy="20" r="2"/></svg>
+      <span><b>Most items delivered by tomorrow</b> — order in the next 4 hours</span>
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-4 9-8 10-4-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      <span><b>2-year manufacturer warranty</b> · returns within 30 days</span>
     </div>
   </div>
+</div>
 
-  <div class="price-cluster reveal">
-    <!-- Blueprint silhouette -->
-    <svg class="blueprint" viewBox="0 0 400 360" fill="none" stroke="#c6ff3d" stroke-width=".7" opacity=".22">
-      <rect x="40" y="30" width="320" height="300" />
-      <rect x="60" y="55" width="280" height="245" />
-      <line x1="60" y1="240" x2="340" y2="240" />
-      <line x1="60" y1="80" x2="340" y2="80" />
-      <rect x="100" y="100" width="200" height="130" stroke-dasharray="2 4"/>
-      <line x1="200" y1="100" x2="200" y2="230" />
-      <line x1="100" y1="165" x2="300" y2="165" />
-      <circle cx="200" cy="165" r="6" />
-      <text x="44" y="22" fill="#c6ff3d" font-family="JetBrains Mono" font-size="9">REV.A · P2S · 256×256×256</text>
-      <text x="44" y="350" fill="#c6ff3d" font-family="JetBrains Mono" font-size="8">3DJAKE/SALE · 20%</text>
-    </svg>
-
-    <div class="pc-head">
-      <span>PRICE READOUT</span>
-      <span class="live">LIVE</span>
+<!-- USP STRIP -->
+<div class="usp-strip">
+  <div class="usp-strip-in">
+    <div class="item">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17h2l1 3h12l1-3h2V8H3z"/><circle cx="8" cy="20" r="2"/><circle cx="17" cy="20" r="2"/></svg>
+      <div><b>Free shipping</b><span>EU orders above 99 €</span></div>
     </div>
-    <div class="price-old mono">RRP €514.68</div>
-    <div class="price-now">
-      <span class="currency">€</span>
-      <span class="amount">411</span>
-      <span class="cents">,74</span>
+    <div class="item">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div><b>Next-day dispatch</b><span>In stock at our EU warehouse</span></div>
     </div>
-    <div class="price-row">
-      <span class="save-pill">SAVE €102.94</span>
-      <span class="vat">incl. 19% VAT</span>
+    <div class="item">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-4 9-8 10-4-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      <div><b>2-year warranty</b><span>Plus 30-day right of return</span></div>
     </div>
-    <a class="cta" href="https://www.3djake.com/bambu-lab/p2s">CLAIM 20% OFF <span class="arrow">→</span></a>
-    <a class="cta cta-ghost" href="#deals">COMPARE BUNDLE <span class="arrow">↓</span></a>
+    <div class="item">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M8 12l3 3 5-5"/></svg>
+      <div><b>Trusted by 10.500+</b><span>products in catalogue</span></div>
+    </div>
   </div>
-</section>
+</div>
 
-<div class="rule"></div>
+<!-- FEATURE GRID -->
+<section class="wide">
+  <h2 class="sec-h">Why the <span class="accent">Bambu Lab P2S</span> is on every workshop bench</h2>
+  <p class="sec-sub">The P2S is Bambu Lab's most popular Core-XY platform — production-grade speed and AI reliability at a desktop price point. Here are the twelve specs that matter.</p>
 
-<!-- USPs -->
-<section>
-  <div class="sec-head">
-    <h2>Twelve reasons<br>this <em>changes</em> your workshop.</h2>
-    <div class="stamp"><b>SPEC SHEET</b><br>Verified against Bambu Lab P2S · May 2026</div>
-  </div>
-
-  <div class="usp">
-    <!-- icons are inline svg, monochrome, drawn to be precise -->
-    <div class="item reveal">
-      <div class="num">01</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 18l5-9 4 6 7-11"/><path d="M4 22h17"/></svg>
-      <h3>500 mm/s Print Speed</h3>
-      <p>Core-XY motion with 20,000 mm/s² acceleration. Production-grade throughput at desktop scale.</p>
-      <span class="label">·01 SPEED</span>
+  <div class="feat">
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18l5-9 4 6 7-11"/></svg></div>
+      <h3>500 mm/s print speed</h3>
+      <p>Core-XY motion with 20,000 mm/s² acceleration. Production throughput at desktop scale.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">02</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M9 3v18"/></svg>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18"/><path d="M3 9h18M9 3v18"/></svg></div>
       <h3>256 × 256 × 256 mm</h3>
-      <p>A perfect cube of usable space. Print full-size helmets, jigs, and brackets without splitting.</p>
-      <span class="label">·02 VOLUME</span>
+      <p>A perfect cube of usable space. Print full-size helmets, jigs and brackets without splitting.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">03</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
-      <h3>PMSM Servo Extruder</h3>
-      <p>8.5 kg of extrusion force and 40 mm³/s flow. Pushes abrasive composites without a stall.</p>
-      <span class="label">·03 EXTRUDER</span>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+      <h3>PMSM servo extruder</h3>
+      <p>8.5 kg extrusion force and 40 mm³/s flow rate. Pushes carbon and glass-fiber composites without stalling.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">04</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2c-3 4-3 7 0 10s3 6 0 10"/><path d="M16 6c-2 2-2 4 0 6"/></svg>
-      <h3>300 °C Hotend · 110 °C Bed</h3>
-      <p>Reach engineering-grade thermoplastics. ABS, ASA, PA, PC — no upgrade kit required.</p>
-      <span class="label">·04 THERMALS</span>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-3 4-3 7 0 10s3 6 0 10"/></svg></div>
+      <h3>300 °C hotend · 110 °C bed</h3>
+      <p>Engineering-grade thermoplastics: ABS, ASA, PA, PC, PETG-CF — no upgrade kit needed.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">05</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 12h6l3-9 3 18 3-9h3"/></svg>
-      <h3>AI Error Detection</h3>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <h3>AI error detection</h3>
       <p>Onboard computer vision catches spaghetti and first-layer fails before they ruin a 12-hour print.</p>
-      <span class="label">·05 AI WATCHDOG</span>
     </div>
-    <div class="item reveal">
-      <div class="num">06</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="12" rx="1"/><circle cx="12" cy="12" r="3"/></svg>
-      <h3>1080p · 30 fps Camera</h3>
-      <p>HD live stream and time-lapse over the cloud. Watch your print from the train.</p>
-      <span class="label">·06 OPTICS</span>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="1"/><circle cx="12" cy="12" r="3"/></svg></div>
+      <h3>1080p · 30 fps camera</h3>
+      <p>HD live stream and time-lapse over the cloud. Monitor every print from your phone.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">07</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6M5 9l3 4M19 9l-3 4M3 22l4-9M21 22l-4-9M8 22h8"/></svg>
-      <h3>30-Second Quick-Swap Hotend</h3>
-      <p>Toolless nozzle changes between 0.2 / 0.4 / 0.6 / 0.8 mm. Detail and bulk on the same machine.</p>
-      <span class="label">·07 MODULAR</span>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6M5 9l3 4M19 9l-3 4M3 22l4-9M21 22l-4-9"/></svg></div>
+      <h3>30-second quick-swap hotend</h3>
+      <p>Toolless changes between 0.2 / 0.4 / 0.6 / 0.8 mm nozzles. Detail prints and bulk on one machine.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">08</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M8 21h8M10 18v3M14 18v3"/></svg>
-      <h3>5" Touchscreen</h3>
-      <p>Crisp 854×480 panel for slicing-free operation. Tap a file, tap Print.</p>
-      <span class="label">·08 INTERFACE</span>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="1"/><path d="M8 21h8"/></svg></div>
+      <h3>5" touchscreen</h3>
+      <p>854 × 480 panel for slicing-free operation. Pick a file from cloud, tap Print.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">09</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7c4-4 12-4 16 0M4 12c4-4 12-4 16 0M4 17c4-4 12-4 16 0"/></svg>
-      <h3>Adaptive Airflow Cooling</h3>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7c4-4 12-4 16 0M4 12c4-4 12-4 16 0M4 17c4-4 12-4 16 0"/></svg></div>
+      <h3>Adaptive airflow cooling</h3>
       <p>Variable cooling profile per material — PLA bridges sharp, PETG layers strong.</p>
-      <span class="label">·09 AIR</span>
     </div>
-    <div class="item reveal">
-      <div class="num">10</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="9" width="18" height="10"/><path d="M7 9V5h10v4M3 13h18"/></svg>
-      <h3>Textured PEI · Hardened Nozzle</h3>
-      <p>Flex steel plate releases parts with a twist. Hardened steel nozzle eats carbon-fiber without wear.</p>
-      <span class="label">·10 SURFACE</span>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="9" width="18" height="10"/><path d="M7 9V5h10v4"/></svg></div>
+      <h3>Textured PEI · hardened nozzle</h3>
+      <p>Flex steel plate releases parts with a twist. Hardened steel nozzle eats abrasives without wear.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">11</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16"/><path d="M9 9h6v6H9z"/></svg>
-      <h3>Fully Assembled</h3>
-      <p>Out of the box to first print in under 20 minutes. Calibrated at the factory.</p>
-      <span class="label">·11 SETUP</span>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16"/><path d="M9 9h6v6H9z"/></svg></div>
+      <h3>Fully assembled</h3>
+      <p>From box to first print in under 20 minutes. Factory-calibrated, no manual leveling.</p>
     </div>
-    <div class="item reveal">
-      <div class="num">12</div>
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/><path d="M10 12h4"/></svg>
-      <h3>AMS-Compatible</h3>
+    <div class="card">
+      <div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="12" r="3"/><circle cx="17" cy="12" r="3"/><path d="M10 12h4"/></svg></div>
+      <h3>AMS-compatible</h3>
       <p>Upgrade later to the Automatic Material System for 4-color and multi-material printing.</p>
-      <span class="label">·12 UPGRADE</span>
     </div>
   </div>
 </section>
 
-<div class="rule"></div>
-
-<!-- TELEMETRY STATS -->
-<section>
-  <div class="sec-head">
-    <h2>Telemetry, <em>not marketing.</em></h2>
-    <div class="stamp"><b>FIRMWARE 1.06.x</b><br>Operating envelope · factory-tested</div>
-  </div>
-  <div class="stats">
-    <div class="stat reveal"><span class="tick"></span>
-      <div class="k">Max Speed</div>
-      <div class="v">500<sup>mm/s</sup></div>
-      <div class="u">·· 20,000 mm/s² accel</div>
-    </div>
-    <div class="stat reveal"><span class="tick"></span>
-      <div class="k">Flow Rate</div>
-      <div class="v">40<sup>mm³/s</sup></div>
-      <div class="u">·· PMSM 8.5 kg force</div>
-    </div>
-    <div class="stat reveal"><span class="tick"></span>
-      <div class="k">Hotend</div>
-      <div class="v">300<sup>°C</sup></div>
-      <div class="u">·· Bed 110 °C</div>
-    </div>
-    <div class="stat reveal"><span class="tick"></span>
-      <div class="k">Build Cube</div>
-      <div class="v">256<sup>mm³</sup></div>
-      <div class="u">·· 256 × 256 × 256</div>
+<!-- SPEC TABLE -->
+<section class="wide">
+  <h2 class="sec-h">Technical specifications</h2>
+  <p class="sec-sub">Verified against the official Bambu Lab P2S data sheet on 3djake.com.</p>
+  <div class="spec-wrap">
+    <div class="spec-grid">
+      <div><b>Build volume</b><span>256 × 256 × 256 mm</span></div>
+      <div><b>Max print speed</b><span>500 mm/s</span></div>
+      <div><b>Max acceleration</b><span>20,000 mm/s²</span></div>
+      <div><b>Max flow rate</b><span>40 mm³/s</span></div>
+      <div><b>Extrusion force</b><span>8.5 kg (PMSM servo)</span></div>
+      <div><b>Hotend temperature</b><span>up to 300 °C</span></div>
+      <div><b>Heated bed</b><span>up to 110 °C</span></div>
+      <div><b>Nozzle sizes</b><span>0.2 / 0.4 / 0.6 / 0.8 mm</span></div>
+      <div><b>Filament diameter</b><span>1.75 mm</span></div>
+      <div><b>Touchscreen</b><span>5" · 854 × 480</span></div>
+      <div><b>Onboard camera</b><span>1920 × 1080 · 30 fps</span></div>
+      <div><b>Build surface</b><span>Textured PEI flex plate</span></div>
+      <div><b>Supported materials</b><span>PLA · PETG · ABS · ASA · TPU · PC · PA · PVA · CF/GF</span></div>
+      <div><b>AMS compatible</b><span>Yes (sold separately)</span></div>
     </div>
   </div>
 </section>
 
-<div class="rule"></div>
+<!-- DEALS SIDE BY SIDE -->
+<section class="wide" id="deals">
+  <h2 class="sec-h">Choose your <span class="accent">sale deal</span></h2>
+  <p class="sec-sub">Both options ship from our EU warehouse with next-day dispatch. The bundle locks in 20% off both the printer and a CMYK filament 4-pack.</p>
 
-<!-- DEALS -->
-<section id="deals">
-  <div class="sec-head">
-    <h2>Choose your <em>deal.</em></h2>
-    <div class="stamp"><b>BOTH OFFERS · 20% OFF</b><br>Valid while listed · 3djake.com</div>
-  </div>
   <div class="deals">
 
-    <div class="deal reveal">
-      <span class="tag">OPTION A · MACHINE ONLY</span>
-      <h3>P2S Solo</h3>
-      <ul>
-        <li>Bambu Lab P2S printer · fully assembled</li>
-        <li>Textured PEI flex plate</li>
-        <li>Hardened steel nozzle (0.4 mm)</li>
-        <li>Spool holder · accessory box</li>
-        <li>Cloud + camera, AI watchdog enabled</li>
-        <li>2-year limited warranty</li>
-      </ul>
-      <div class="tag" style="color:#666">RRP €514.68</div>
-      <div class="pricing">
-        <span class="now">€411<sup>,74</sup></span>
+    <div class="deal">
+      <div class="deal-hd">
+        <h3>Option A · P2S only</h3>
+        <span style="color:var(--mute);font-size:13px">−20%</span>
       </div>
-      <div class="saving">— SAVES €102.94 · 20% OFF</div>
-      <a class="cta" href="https://www.3djake.com/bambu-lab/p2s">ADD P2S TO CART <span class="arrow">→</span></a>
+      <div class="deal-body">
+        <div class="deal-imgs">
+          <img src="https://3d.nice-cdn.com/upload/image/product/large/default/92605_224ffa65.512x512.png" alt="Bambu Lab P2S">
+        </div>
+        <ul class="deal-list">
+          <li>Bambu Lab P2S printer — fully assembled</li>
+          <li>Textured PEI flex plate + spool holder</li>
+          <li>Hardened steel 0.4 mm nozzle</li>
+          <li>Cloud + 1080p camera, AI watchdog</li>
+          <li>2-year manufacturer warranty</li>
+        </ul>
+        <div class="deal-price">
+          <div>
+            <div class="old">RRP 514,68 €</div>
+            <div class="now">411,74 €</div>
+            <span class="save">SAVE 102,94 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="deal-cta"><a class="btn btn-primary" style="width:100%" href="https://www.3djake.com/bambu-lab/p2s">Add P2S to basket →</a></div>
     </div>
 
-    <div class="deal best reveal">
-      <span class="tag" style="color:#a5d128">OPTION B · BUNDLE</span>
-      <h3>P2S + PLA Basic 4-Pack</h3>
-      <ul>
-        <li>Everything in Option A</li>
-        <li><b>+ 4 kg Bambu Lab PLA Basic CMYK</b></li>
-        <li>Cyan · Magenta · Yellow · Black</li>
-        <li>Refill-ready, RFID-tagged spools</li>
-        <li>First multi-color prints same day</li>
-        <li>Bundle locks in 20% across both items</li>
-      </ul>
-      <div class="tag" style="color:#666">RRP €588.05</div>
-      <div class="pricing">
-        <span class="now">€470<sup>,44</sup></span>
+    <div class="deal featured">
+      <div class="deal-hd">
+        <h3>Option B · P2S + PLA Basic CMYK</h3>
+        <span class="featured-pill">BEST VALUE</span>
       </div>
-      <div class="saving" style="color:var(--lime)">— SAVES €117.61 · BEST VALUE</div>
-      <a class="cta" href="https://www.3djake.com/bambu-lab/p2s">CLAIM BUNDLE <span class="arrow">→</span></a>
+      <div class="deal-body">
+        <div class="deal-imgs bundle-imgs">
+          <img class="main" src="https://3d.nice-cdn.com/upload/image/product/large/default/92605_224ffa65.512x512.png" alt="Bambu Lab P2S">
+          <div class="spools">
+            <img src="https://3d.nice-cdn.com/upload/image/product/large/default/47872_0c831e1d.512x512.webp" alt="">
+            <img src="https://3d.nice-cdn.com/upload/image/product/large/default/47893_beb1f1df.512x512.webp" alt="">
+            <img src="https://3d.nice-cdn.com/upload/image/product/large/default/47887_1e1e06a4.512x512.webp" alt="">
+            <img src="https://3d.nice-cdn.com/upload/image/product/large/default/58224_8e826833.512x512.png" alt="">
+          </div>
+        </div>
+        <ul class="deal-list">
+          <li>Everything in Option A</li>
+          <li><b>+ 4 × 1 kg Bambu Lab PLA Basic</b></li>
+          <li>Cyan-Green · Yellow · Red · Black</li>
+          <li>RFID-tagged refill spools, AMS-ready</li>
+          <li>First multi-color prints same day</li>
+        </ul>
+        <div class="deal-price">
+          <div>
+            <div class="old">RRP 588,05 €</div>
+            <div class="now">470,44 €</div>
+            <span class="save">SAVE 117,61 €</span>
+          </div>
+        </div>
+      </div>
+      <div class="deal-cta"><a class="btn btn-primary" style="width:100%" href="https://www.3djake.com/bambu-lab/p2s">Add bundle to basket →</a></div>
     </div>
-
   </div>
 </section>
-
-<div class="rule"></div>
 
 <!-- TRUST -->
-<section style="padding-top:24px;padding-bottom:24px">
-  <div class="trust">
+<div class="trust">
+  <div class="trust-in">
     <div>
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="1.5"><path d="M3 17h2l1 3h12l1-3h2V8H3z"/><circle cx="8" cy="20" r="2"/><circle cx="17" cy="20" r="2"/></svg>
-      <div><b>Free EU Shipping</b><span>Orders above €99 · 2-day average</span></div>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 17h2l1 3h12l1-3h2V8H3z"/><circle cx="8" cy="20" r="2"/><circle cx="17" cy="20" r="2"/></svg>
+      <b>Free EU shipping</b><span>Orders above 99 € · Germany from 52,90 €</span>
     </div>
     <div>
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="1.5"><path d="M12 2l8 4v6c0 5-4 9-8 10-4-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
-      <div><b>2-Year Warranty</b><span>Manufacturer · handled by 3djake</span></div>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <b>Next-business-day dispatch</b><span>In stock at our EU warehouse</span>
     </div>
     <div>
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#c6ff3d" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-      <div><b>Fast Dispatch</b><span>In stock · ships next business day</span></div>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-4 9-8 10-4-1-8-5-8-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+      <b>2-year warranty</b><span>Plus 30-day right of return</span>
     </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<div class="final">
-  <div class="final-in">
     <div>
-      <h2><span class="twenty">−20%</span><br>on the printer<br>that <em>doesn't sleep.</em></h2>
-      <p>The Bambu Lab P2S is the production workhorse of 2026 — and right now it's €102.94 cheaper. Add the CMYK filament 4-pack and walk away €117.61 lighter on cost, heavier on capability.</p>
-    </div>
-    <div class="stack">
-      <a class="cta" href="https://www.3djake.com/bambu-lab/p2s">BUY P2S · €411,74 <span class="arrow">→</span></a>
-      <a class="cta cta-ghost" href="https://www.3djake.com/bambu-lab/p2s">BUY BUNDLE · €470,44 <span class="arrow">→</span></a>
-      <small class="mono" style="color:var(--dim);letter-spacing:.18em;text-transform:uppercase;font-size:10px;margin-top:6px">All prices incl. 19% VAT · While stock lasts</small>
-    </div>
-  </div>
-  <div class="marquee">
-    <div>
-      <span>· BAMBU LAB P2S</span><span>· 500 MM/S</span><span>· 20% OFF AT 3DJAKE</span><span>· AMS-COMPATIBLE</span><span>· FREE EU SHIPPING</span><span>· AI ERROR DETECTION</span>
-      <span>· BAMBU LAB P2S</span><span>· 500 MM/S</span><span>· 20% OFF AT 3DJAKE</span><span>· AMS-COMPATIBLE</span><span>· FREE EU SHIPPING</span><span>· AI ERROR DETECTION</span>
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M9 12l2 2 5-5"/></svg>
+      <b>9 customer ratings · 5★</b><span>Bestseller in the Bambu Lab range</span>
     </div>
   </div>
 </div>
 
-<footer>
-  <div class="mono">© 2026 · Independent sale page · Product by Bambu Lab · Sold by <a href="https://www.3djake.com" style="color:var(--lime)">3djake.com</a></div>
-  <div class="mono">SALE/P2S/V1 · BUILD 2026.05.27</div>
+<footer class="legal">
+  Independent sale page · Bambu Lab P2S is a registered product of Bambu Lab · Sold by <a href="https://www.3djake.com">3djake.com</a><br>
+  Prices include 19% VAT, excludes delivery · Sale ends at midnight · Image rights: Bambu Lab / 3DJake International
 </footer>
 
 <script>
-  // Countdown to next midnight (local)
+  function setImg(btn, id){
+    document.getElementById('mainImg').src = 'https://3d.nice-cdn.com/upload/image/product/large/default/'+id+'.512x512.png';
+    document.querySelectorAll('.gallery-thumbs button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+  }
   function tick(){
     const now = new Date();
     const end = new Date(now); end.setHours(23,59,59,999);
     let s = Math.max(0, Math.floor((end-now)/1000));
     const h = Math.floor(s/3600); s%=3600;
     const m = Math.floor(s/60); s%=60;
-    const p = n => String(n).padStart(2,'0');
-    document.getElementById('cd-h').textContent = p(h);
-    document.getElementById('cd-m').textContent = p(m);
-    document.getElementById('cd-s').textContent = p(s);
+    document.getElementById('cd').textContent = `${h}h ${String(m).padStart(2,'0')}m`;
+    document.getElementById('cd2').textContent = `${h}h ${String(m).padStart(2,'0')}m ${String(s).padStart(2,'0')}s`;
   }
-  tick(); setInterval(tick, 1000);
-
-  // Stagger the CSS reveal animation
-  document.querySelectorAll('.reveal').forEach((el,i)=>{
-    el.style.animationDelay = Math.min(i*50, 800)+'ms';
-  });
+  tick(); setInterval(tick,1000);
 </script>
-
 </body>
 </html>
