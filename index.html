@@ -255,6 +255,15 @@
   .sale-ribbon h3{font-size:26px;font-weight:700;color:var(--orange);line-height:1.1}
   .sale-ribbon p{color:var(--ink);font-size:15px;margin-top:6px;max-width:46ch}
   @media(max-width:780px){.sale-ribbon{grid-template-columns:1fr;text-align:center}.sale-ribbon img{margin:0 auto;width:140px;height:140px}}
+
+  /* ---- Sale video block ---- */
+  .sale-video{margin-top:36px;background:linear-gradient(135deg,#fff7f0 0%,#fff 100%);border:2px dashed var(--orange);border-radius:12px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0;overflow:hidden;align-items:stretch}
+  .sale-video video{width:100%;height:100%;object-fit:cover;display:block;background:#000;min-height:320px}
+  .sale-video-text{padding:36px 40px;display:flex;flex-direction:column;justify-content:center}
+  .sale-video-text h3{font-size:26px;font-weight:700;color:var(--orange);line-height:1.15;margin-bottom:10px}
+  .sale-video-text h3 em{color:var(--teal-dk);font-style:italic}
+  .sale-video-text p{color:var(--ink);font-size:15px;margin-bottom:16px;max-width:46ch}
+  @media(max-width:780px){.sale-video{grid-template-columns:1fr}.sale-video video{min-height:0;aspect-ratio:16/9}}
 </style>
 </head>
 <body>
@@ -573,15 +582,19 @@
   </div>
 </section>
 
-<!-- SALE CELEBRATION -->
+<!-- SALE CELEBRATION + VIDEO -->
 <section class="wide" style="padding-top:0">
-  <div class="sale-ribbon">
-    <img src="img/sale.png" alt="Jakey celebrating the 20% sale">
-    <div>
-      <h3>20% off · Jakey is celebrating</h3>
-      <p>This is one of the biggest discounts we've ever run on a Bambu Lab printer. Once the timer hits zero, the P2S goes back to 514,68 €. Don't make Jakey sad.</p>
+  <div class="sale-video">
+    <video autoplay muted loop playsinline poster="img/sale.png">
+      <source src="img/jakey-sale.mp4" type="video/mp4">
+    </video>
+    <div class="sale-video-text">
+      <span class="eyebrow" style="background:var(--orange);color:#fff;display:inline-block;font-size:11px;font-weight:700;padding:5px 10px;border-radius:4px;letter-spacing:.08em;margin-bottom:14px">⚡ LIMITED TIME</span>
+      <h3>Jakey says: <em>"Sale! Minus twenty percent!"</em></h3>
+      <p>This is one of the biggest discounts we've ever run on a Bambu Lab printer. Once the timer hits zero, the P2S goes back to 514,68 €. Tap the video — Jakey will tell you himself.</p>
+      <a class="btn btn-primary" href="https://www.3djake.com/bambu-lab/p2s" style="width:fit-content">Claim 20% off →</a>
+      <p style="font-size:11px;color:var(--mute);margin-top:10px">↑ Generated with Google Veo 3.1 Lite via OpenRouter — image-to-video from the Jakey sale illustration.</p>
     </div>
-    <a class="btn btn-primary" href="https://www.3djake.com/bambu-lab/p2s">Add to basket →</a>
   </div>
 </section>
 
