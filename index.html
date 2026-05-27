@@ -220,6 +220,41 @@
 
   .heart{cursor:pointer;color:var(--mute);font-size:20px;line-height:1;width:50px;height:52px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:6px;background:#fff;transition:color .15s}
   .heart:hover{color:var(--orange)}
+
+  /* ---- HERO BANNER (Jakey + P2S) ---- */
+  .hero-banner{max-width:1280px;margin:18px auto 0;padding:0 20px}
+  .hero-banner-in{position:relative;border-radius:14px;overflow:hidden;background:#0c3742;aspect-ratio:21/9;box-shadow:0 20px 50px rgba(18,84,103,.18)}
+  .hero-banner-in img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .hero-banner-text{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:6% 6%;color:#fff;max-width:55%}
+  .hero-banner-text .eyebrow{display:inline-flex;background:var(--yellow);color:#1a1a1a;font-size:12px;font-weight:700;padding:5px 10px;border-radius:4px;letter-spacing:.08em;width:fit-content;margin-bottom:14px}
+  .hero-banner-text h2{font-size:clamp(28px,3.4vw,52px);font-weight:700;line-height:1.05;letter-spacing:-.01em;text-shadow:0 4px 18px rgba(0,0,0,.5)}
+  .hero-banner-text h2 .accent{color:var(--yellow)}
+  .hero-banner-text p{margin-top:12px;font-size:clamp(14px,1.3vw,18px);opacity:.92;max-width:36ch;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+  .hero-banner-text .btn{margin-top:20px;width:fit-content}
+  @media(max-width:780px){
+    .hero-banner-in{aspect-ratio:4/5}
+    .hero-banner-text{max-width:90%;padding:7% 7%}
+    .hero-banner-text h2{font-size:30px}
+  }
+
+  /* ---- CMYK billboard ---- */
+  .cmyk-billboard{margin-top:32px;background:linear-gradient(135deg,#fff 0%,#f5fafb 100%);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-columns:1.3fr 1fr;gap:0;align-items:center}
+  .cmyk-billboard img{width:100%;height:100%;object-fit:cover;min-height:280px;display:block}
+  .cmyk-billboard .cb-text{padding:36px}
+  .cmyk-billboard h3{font-size:28px;font-weight:700;color:var(--teal-dk);margin-bottom:10px;line-height:1.15}
+  .cmyk-billboard h3 em{color:var(--orange);font-style:normal}
+  .cmyk-billboard p{color:var(--mute);font-size:15px;line-height:1.55;margin-bottom:14px}
+  .cmyk-billboard ul{list-style:none;font-size:14px;margin-bottom:18px}
+  .cmyk-billboard li{padding:5px 0;display:flex;gap:8px}
+  .cmyk-billboard li::before{content:"✓";color:var(--teal-2);font-weight:700}
+  @media(max-width:780px){.cmyk-billboard{grid-template-columns:1fr}}
+
+  /* ---- Sale celebration ribbon ---- */
+  .sale-ribbon{margin-top:36px;background:linear-gradient(135deg,#fff7f0 0%,#fff 100%);border:2px dashed var(--orange);border-radius:12px;padding:28px 36px;display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center}
+  .sale-ribbon img{width:160px;height:160px;object-fit:contain}
+  .sale-ribbon h3{font-size:26px;font-weight:700;color:var(--orange);line-height:1.1}
+  .sale-ribbon p{color:var(--ink);font-size:15px;margin-top:6px;max-width:46ch}
+  @media(max-width:780px){.sale-ribbon{grid-template-columns:1fr;text-align:center}.sale-ribbon img{margin:0 auto;width:140px;height:140px}}
 </style>
 </head>
 <body>
@@ -280,6 +315,19 @@
     <a href="#" style="color:var(--orange-2)">🔥 New Products</a>
   </div>
 </nav>
+
+<!-- HERO BANNER with Jakey + P2S -->
+<div class="hero-banner">
+  <div class="hero-banner-in">
+    <img src="img/hero.png" alt="Jakey mascot next to the Bambu Lab P2S 3D printer">
+    <div class="hero-banner-text">
+      <span class="eyebrow">⚡ FLASH SALE</span>
+      <h2>Bambu Lab P2S<br><span class="accent">−20% off</span> · today only</h2>
+      <p>Jakey approves. The fastest Core-XY printer in our catalogue, now <b>411,74&nbsp;€</b> instead of 514,68&nbsp;€.</p>
+      <a class="btn btn-primary" href="https://www.3djake.com/bambu-lab/p2s">Claim 20% off →</a>
+    </div>
+  </div>
+</div>
 
 <!-- BREADCRUMB -->
 <div class="crumb">
@@ -505,6 +553,35 @@
       <div><b>Supported materials</b><span>PLA · PETG · ABS · ASA · TPU · PC · PA · PVA · CF/GF</span></div>
       <div><b>AMS compatible</b><span>Yes (sold separately)</span></div>
     </div>
+  </div>
+</section>
+
+<!-- CMYK BILLBOARD -->
+<section class="wide">
+  <div class="cmyk-billboard">
+    <img src="img/cmyk.png" alt="Four Jakey mascots in CMYK colors holding Bambu Lab PLA Basic filament spools">
+    <div class="cb-text">
+      <h3>Add the <em>CMYK 4-pack</em> to print in full color from day one</h3>
+      <p>Four kilograms of Bambu Lab PLA Basic — Cyan, Magenta, Yellow and Black — bundled with the printer at the same 20% sale price. Jakey-approved colors, AMS-ready, RFID-tagged refill spools.</p>
+      <ul>
+        <li>4 × 1 kg refill spools (no plastic core waste)</li>
+        <li>RFID-tagged — your P2S reads the color automatically</li>
+        <li>Bundle saves you an extra <b>14,67 €</b> over buying separately</li>
+      </ul>
+      <a class="btn btn-primary" href="#deals" style="width:fit-content">See bundle deal →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SALE CELEBRATION -->
+<section class="wide" style="padding-top:0">
+  <div class="sale-ribbon">
+    <img src="img/sale.png" alt="Jakey celebrating the 20% sale">
+    <div>
+      <h3>20% off · Jakey is celebrating</h3>
+      <p>This is one of the biggest discounts we've ever run on a Bambu Lab printer. Once the timer hits zero, the P2S goes back to 514,68 €. Don't make Jakey sad.</p>
+    </div>
+    <a class="btn btn-primary" href="https://www.3djake.com/bambu-lab/p2s">Add to basket →</a>
   </div>
 </section>
 
